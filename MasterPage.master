@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Keşan Hediye Sepeti</title>
+    <style type="text/css">
+        h1 {
+        color:#FC8639
+        }
+        body {
+
+        background-color: #F6F6F6;
+
+        }
+        
+        .container
+{
+        margin: 0 auto;
+        width:1000px;
+}
+
+        #menu {
+	margin: 0px;
+	padding: 0px;
+
+	list-style-type: none;
+}
+#menu li {
+	float: left;
+	width: 125px;
+	position: relative;
+}
+#menu a {
+	font-family: Arial;
+	font-size: 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #314c5f;
+	display: block;
+	padding-top: 5px;
+	padding-right: 5px;
+	border: 1px solid #9fb2bc;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 2px;
+	<!--border-radius:5px; 
+}
+        #footer 
+        {
+        bottom:0px;
+        }
+
+#menu a:hover {
+	background-color: #fff;
+	color:#000;
+}
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+    <form id="form1" runat="server">
+         
+    <div>
+        <div class="container">
+<ul id="menu">
+<li><a href="Default.aspx">AnaSayfa</a></li>
+<li><a href="dogumgunu.aspx">Doğum Günü</a></li>
+<li><a href="yilbasi.aspx">Yılbaşı</a></li>
+<li><a href="arkadas.aspx">Arkadaşa</a></li>
+<li><a href="siradisi.aspx">Sıradışı</a></li>
+<li><a href="about.aspx">Hakkımızda</a></li>
+<li><a href="contact.aspx">İletişim</a></li>
+<li><a href="follow.aspx">Takip Et</a></li>
+</ul> </div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+       
+    </form>
+</body>
+</html>
